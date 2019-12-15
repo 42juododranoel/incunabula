@@ -1,0 +1,19 @@
+.page {
+  grid-row: 1;
+
+  &:first-of-type {
+    grid-column: page-first;
+  }
+
+  &:last-of-type {
+    grid-column: page-last;
+  }
+}
+
+.page-tb-rtl {
+  @include tb-rtl;
+}
+
+.page-rtl-tb {
+  @include rtl-tb;
+}

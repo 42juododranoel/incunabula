@@ -1,0 +1,19 @@
+.book-rtl-tb {
+  .page {
+    @include rtl-tb;
+  }
+}
+
+.book-tb-rtl {
+  .page {
+    @include tb-rtl;
+  }
+}
+
+
+.book-rtl-tb,
+.book-tb-rtl {
+  .spread {
+    @include rtl-columns;
+  }
+}
