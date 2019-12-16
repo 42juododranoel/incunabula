@@ -5,20 +5,3 @@
 
   height: 30vh;
 }
-
-.spread-rtl-tb,
-.spread-tb-rtl {
-  @include rtl-columns;
-}
-
-.spread-rtl-tb {
-  .page {
-    @include rtl-tb;
-  }
-}
-
-.spread-tb-rtl {
-  .page {
-    @include tb-rtl;
-  }
-}

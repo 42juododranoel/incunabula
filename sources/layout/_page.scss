@@ -9,11 +9,3 @@
     grid-column: page-last;
   }
 }
-
-.page-tb-rtl {
-  @include tb-rtl;
-}
-
-.page-rtl-tb {
-  @include rtl-tb;
-}

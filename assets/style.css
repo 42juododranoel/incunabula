@@ -436,27 +436,9 @@ html {
   grid-template-rows: 1fr;
   height: 30vh; }
 
-.spread-rtl-tb,
-.spread-tb-rtl {
-  grid-template-columns: [page-last] 1fr [page-first] 1fr; }
-
-.spread-rtl-tb .page {
-  direction: rtl;
-  unicode-bidi: bidi-override; }
-
-.spread-tb-rtl .page {
-  writing-mode: vertical-rl; }
-
 .page {
   grid-row: 1; }
   .page:first-of-type {
     grid-column: page-first; }
   .page:last-of-type {
     grid-column: page-last; }
-
-.page-tb-rtl {
-  writing-mode: vertical-rl; }
-
-.page-rtl-tb {
-  direction: rtl;
-  unicode-bidi: bidi-override; }
