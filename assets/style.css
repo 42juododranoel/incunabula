@@ -419,6 +419,18 @@ html {
 *::after {
   box-sizing: inherit; }
 
+body {
+  font-size: 20px;
+  font-family: "PT Serif";
+  line-height: 1.5; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+p {
+  margin: 0;
+  text-indent: 20px; }
+
 .book-rtl-tb .page {
   direction: rtl;
   unicode-bidi: bidi-override; }
@@ -434,11 +446,17 @@ html {
   display: grid;
   grid-template-columns: [page-first] 1fr [page-last] 1fr;
   grid-template-rows: 1fr;
-  height: 30vh; }
+  height: 100vh; }
 
 .page {
-  grid-row: 1; }
+  grid-row: 1;
+  padding-top: 60px;
+  padding-bottom: 120px; }
   .page:first-of-type {
-    grid-column: page-first; }
+    grid-column: page-first;
+    padding-left: 80px;
+    padding-right: 40px; }
   .page:last-of-type {
-    grid-column: page-last; }
+    grid-column: page-last;
+    padding-left: 40px;
+    padding-right: 80px; }

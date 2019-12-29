@@ -1,11 +1,18 @@
 .page {
   grid-row: 1;
 
+  padding-top: 60px;
+  padding-bottom: 120px;
+
   &:first-of-type {
     grid-column: page-first;
+    padding-left: 80px;
+    padding-right: 40px;
   }
 
   &:last-of-type {
     grid-column: page-last;
+    padding-left: 40px;
+    padding-right: 80px;
   }
 }
