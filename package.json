@@ -12,7 +12,7 @@
     "compress": "node-sass assets/style.css assets/style.css --output-style compressed",
     "build": "npm-run-all compile prefix compress"
   },
-  "repository": "git@github.com:vsevolod-skripnik/gutenberg.git",
+  "repository": "git@github.com:vsevolod-skripnik/incunabula.git",
   "author": "Vsevolod Skripnik <vsevolod_skripnik@protonmail.com>",
   "license": "MIT",
   "devDependencies": {

@@ -431,22 +431,11 @@ p {
   margin: 0;
   text-indent: 20px; }
 
-.book-rtl-tb .page {
-  direction: rtl;
-  unicode-bidi: bidi-override; }
-
-.book-tb-rtl .page {
-  writing-mode: vertical-rl; }
-
-.book-rtl-tb .spread,
-.book-tb-rtl .spread {
-  grid-template-columns: [page-last] 1fr [page-first] 1fr; }
-
 .spread {
   display: grid;
   grid-template-columns: [page-first] 1fr [page-last] 1fr;
   grid-template-rows: 1fr;
-  height: 100vh; }
+  border-bottom: 1px solid black; }
 
 .page {
   grid-row: 1;
