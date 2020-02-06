@@ -7,167 +7,182 @@
   <meta http-equiv='X-UA-Compatible' content='ie=edge'>
   <link rel='stylesheet' href='assets/style.css'>
   <title>One page to test all styles</title>
+  <style>
+    .spread {
+      border-bottom: 1px solid black;
+    }
+
+    #configure-wrappers [class$='-outer-wrapper'] {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    #configure-wrappers [class$='-outer-wrapper'] [class$='-wrapper'] {
+      margin-bottom: 0;
+    }
+
+    #configure-paragraph p {
+      text-indent: 0;
+    }
+  </style>
 </head>
 
 <body>
   <div class='book'>
+
+    <!-- Configure font-size and line-height -->
     <div class='spread'>
       <div class='page'>
-        <h1>Heading one</h1>
-        <h2>Heading two</h2>
-        <h3>Heading three</h3>
-        <p>
-          Lorem ipsum dolor sit amet, dolor aliquid definiebas per ne, vix animal prompta indoctum te.
-          Agam noster sadipscing nec eu, at doming salutandi sit.
-        </p>
-        <p>
-          Sit ei fugit fabellas repudiandae, ex sea elitr quodsi indoctum.
-          Laboramus aliquando at his, cu duo erat essent audiam. An vis facer corrumpit, usu ne quis idque.
-        </p>
-        <p>
-          Sit ei fugit fabellas repudiandae, ex sea elitr quodsi indoctum.
-          Laboramus aliquando at his, cu duo erat essent audiam. An vis facer corrumpit, usu ne quis idque.
-          Lorem ipsum dolor sit amet, dolor aliquid definiebas per ne, vix animal prompta indoctum te.
-          Agam noster sadipscing nec eu, at doming salutandi sit.
-        </p>
-        <p>
-          Sit ei fugit fabellas repudiandae, ex sea elitr quodsi indoctum.
-          Laboramus aliquando at his, cu duo erat essent audiam. An vis facer corrumpit, usu ne quis idque.
-        </p>
-        <p>
-          Sit ei fugit fabellas repudiandae, ex sea elitr quodsi indoctum.
-          Laboramus aliquando at his, cu duo erat essent audiam. An vis facer corrumpit, usu ne quis idque.
-          Lorem ipsum dolor sit amet, dolor aliquid definiebas per ne, vix animal prompta indoctum te.
-          Agam noster sadipscing nec eu, at doming salutandi sit.
-        </p>
+        <div class='p-wrapper'>
+          <p>
+            Configure font-size and line-height for each element here.
+          </p>
+        </div>
       </div>
 
       <div class='page'>
-        <p>
-          Sit ei fugit fabellas repudiandae, ex sea elitr quodsi indoctum.
-          Laboramus aliquando at his, cu duo erat essent audiam. An vis facer corrumpit, usu ne quis idque.
-        </p>
-        <p>
-          Sit ei fugit fabellas repudiandae, ex sea elitr quodsi indoctum.
-          Laboramus aliquando at his, cu duo erat essent audiam. An vis facer corrumpit, usu ne quis idque.
-          Lorem ipsum dolor sit amet, dolor aliquid definiebas per ne, vix animal prompta indoctum te.
-          Agam noster sadipscing nec eu, at doming salutandi sit.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, dolor aliquid definiebas per ne, vix animal prompta indoctum te.
-          Agam noster sadipscing nec eu, at doming salutandi sit.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, dolor aliquid definiebas per ne, vix animal prompta indoctum te.
-          Agam noster sadipscing nec eu, at doming salutandi sit.
-        </p>
-        <p>
-          Sit ei fugit fabellas repudiandae, ex sea elitr quodsi indoctum.
-          Laboramus aliquando at his, cu duo erat essent audiam. An vis facer corrumpit, usu ne quis idque.
-        </p>
-        <p>
-          Sit ei fugit fabellas repudiandae, ex sea elitr quodsi indoctum.
-          Laboramus aliquando at his, cu duo erat essent audiam. An vis facer corrumpit, usu ne quis idque.
-          Lorem ipsum dolor sit amet, dolor aliquid definiebas per ne, vix animal prompta indoctum te.
-          Agam noster sadipscing nec eu, at doming salutandi sit.
-        </p>
+        <div class='h1-wrapper'>
+          <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+        </div>
+        <div class='h2-wrapper'>
+          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet mattis lectus.</h2>
+        </div>
+        <div class='h3-wrapper'>
+          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet mattis lectus. Aliquam tempor ligula eget euismod viverra.</h3>
+        </div>
+        <div class='p-wrapper'>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet mattis lectus. Aliquam tempor ligula eget euismod viverra. Donec tempus libero congue nibh pharetra lobortis. Ut malesuada mauris nibh, et finibus nisl iaculis ac. Integer vulputate leo id est congue varius at vitae odio. Vivamus varius libero finibus enim varius varius. Morbi id nulla elementum, scelerisque libero non, dapibus lacus. Nam laoreet neque nec mi mattis tempor. Phasellus tempus tempor sem interdum facilisis. Maecenas auctor nulla ut sapien mollis, ac tempor velit vulputate. Nunc arcu nisl, accumsan eget erat eget, posuere congue augue. Maecenas consectetur pulvinar luctus. Ut sed orci turpis. Fusce maximus porttitor ante. Quisque vel placerat elit, sed efficitur sem. Curabitur venenatis tincidunt porttitor.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class='book'>
+    <!-- Configure wrappers -->
+    <div class='spread'>
+      <div class='page'>
+        <div class='p-wrapper'>
+          <p>Configure top and bottom margin for each element here.</p>
+        </div>
+      </div>
+      <div id='configure-wrappers' class='page'>
+        <div class='h1-outer-wrapper'>
+          <div class='h1-wrapper'>
+            <h1>Heading one</h1>
+          </div>
+        </div>
+        <div class='h2-outer-wrapper'>
+          <div class='h2-wrapper'>
+            <h2>Heading two</h2>
+          </div>
+        </div>
+        <div class='h3-outer-wrapper'>
+          <div class='h3-wrapper'>
+            <h3>Heading three</h3>
+          </div>
+        </div>
+        <div class='p-outer-wrapper'>
+          <div class='p-wrapper'>
+            <p>
+              Lorem ipsum dolor sit amet, dolor aliquid definiebas per ne, vix animal prompta indoctum te.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Configure paragraph margin-bottom -->
+    <div class='spread'>
+      <div class='page'>
+        <div class='p-wrapper'>
+          <p>Configure paragraph margin-bottom.</p>
+        </div>
+      </div>
+
+      <div class='page'>
+        <div class='p-wrapper'>
+          <p class='no-indent'>
+            <span class='small-capitals'>Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit. Praesent sit amet mattis lectus. Aliquam tempor ligula eget euismod viverra. Donec tempus libero congue nibh pharetra lobortis. Ut malesuada mauris nibh, et finibus nisl iaculis ac. Integer vulputate leo id est congue varius at vitae odio. Vivamus varius libero finibus enim varius varius. Morbi id nulla elementum, scelerisque libero non, dapibus lacus. Nam laoreet neque nec mi mattis tempor. Phasellus tempus tempor sem interdum facilisis. Maecenas auctor nulla ut sapien mollis, ac tempor velit vulputate. Nunc arcu nisl, accumsan eget erat eget, posuere congue augue. Maecenas consectetur pulvinar luctus. Ut sed orci turpis. Fusce maximus porttitor ante. Quisque vel placerat elit, sed efficitur sem. Curabitur venenatis tincidunt porttitor.
+          </p>
+        </div>
+        <div class='p-wrapper'>
+          <p>
+            Duis accumsan semper massa, et vulputate arcu efficitur a. Praesent rhoncus risus sit amet porta tristique. Ut ac turpis ac erat convallis aliquet blandit quis odio. Vestibulum quis gravida quam, id facilisis mauris. Vivamus fringilla, ligula a ullamcorper ullamcorper, purus dui aliquet sem, sed tincidunt purus erat commodo ligula. Praesent eget ante auctor, suscipit erat vel, ultrices est. Nulla interdum iaculis ultricies. Quisque elementum lectus ac tincidunt rhoncus. Fusce finibus lacus eu tortor condimentum molestie. In hac habitasse platea dictumst.
+          </p>
+        </div>
+        <div class='p-wrapper'>
+          <p>
+            Suspendisse vel urna vitae massa elementum molestie vel et lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec quis porta massa, sed posuere lectus. Mauris et urna ante. Vivamus tristique ac dolor et feugiat. Pellentesque finibus tortor in urna interdum, quis lacinia lorem faucibus. Suspendisse imperdiet molestie metus, eu maximus augue mattis nec. Nulla ex sem, eleifend ac sapien eget, pulvinar iaculis enim. Vivamus non venenatis augue. Curabitur placerat risus at purus tempor iaculis. Nullam tincidunt volutpat pellentesque.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Configure heading one margin-bottom -->
     <div class='spread'>
       <div class='page'>
         <div class='h1-wrapper'>
-          <h1>Heading one</h1>
-        </div>
-        <div class='h2-wrapper'>
-          <h2>Heading two</h2>
-        </div>
-        <div class='h3-wrapper'>
-          <h3>Heading three</h3>
+          <h1>h1 margin-bottom</h1>
         </div>
         <div class='p-wrapper'>
           <p>
-            Lorem ipsum dolor sit amet, dolor aliquid definiebas per ne, vix animal prompta indoctum te.
-            Agam noster sadipscing nec eu, at doming salutandi sit.
-          </p>
-        </div>
-        <div class='p-wrapper'>
-          <p>
-            Sit ei fugit fabellas repudiandae, ex sea elitr quodsi indoctum.
-            Laboramus aliquando at his, cu duo erat essent audiam. An vis facer corrumpit, usu ne quis idque.
-          </p>
-        </div>
-        <div class='p-wrapper'>
-          <p>
-            Sit ei fugit fabellas repudiandae, ex sea elitr quodsi indoctum.
-            Laboramus aliquando at his, cu duo erat essent audiam. An vis facer corrumpit, usu ne quis idque.
-            Lorem ipsum dolor sit amet, dolor aliquid definiebas per ne, vix animal prompta indoctum te.
-            Agam noster sadipscing nec eu, at doming salutandi sit.
-          </p>
-        </div>
-        <div class='p-wrapper'>
-          <p>
-            Sit ei fugit fabellas repudiandae, ex sea elitr quodsi indoctum.
-            Laboramus aliquando at his, cu duo erat essent audiam. An vis facer corrumpit, usu ne quis idque.
-          </p>
-        </div>
-        <div class='p-wrapper'>
-          <p>
-            Sit ei fugit fabellas repudiandae, ex sea elitr quodsi indoctum.
-            Laboramus aliquando at his, cu duo erat essent audiam. An vis facer corrumpit, usu ne quis idque.
-            Lorem ipsum dolor sit amet, dolor aliquid definiebas per ne, vix animal prompta indoctum te.
-            Agam noster sadipscing nec eu, at doming salutandi sit.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet mattis lectus. Aliquam tempor ligula eget euismod viverra. Donec tempus libero congue nibh pharetra lobortis. Ut malesuada mauris nibh, et finibus nisl iaculis ac. Integer vulputate leo id est congue varius at vitae odio. Vivamus varius libero finibus enim varius varius. Morbi id nulla elementum, scelerisque libero non, dapibus lacus. Nam laoreet neque nec mi mattis tempor.
           </p>
         </div>
       </div>
-
-      <div class='page'>
+      <div class='page' style='padding-top: 81px'>
         <div class='p-wrapper'>
           <p>
-            Sit ei fugit fabellas repudiandae, ex sea elitr quodsi indoctum.
-            Laboramus aliquando at his, cu duo erat essent audiam. An vis facer corrumpit, usu ne quis idque.
-          </p>
-        </div>
-        <div class='p-wrapper'>
-          <p>
-            Sit ei fugit fabellas repudiandae, ex sea elitr quodsi indoctum.
-            Laboramus aliquando at his, cu duo erat essent audiam. An vis facer corrumpit, usu ne quis idque.
-            Lorem ipsum dolor sit amet, dolor aliquid definiebas per ne, vix animal prompta indoctum te.
-            Agam noster sadipscing nec eu, at doming salutandi sit.
-          </p>
-        </div>
-        <div class='p-wrapper'>
-          <p>
-            Lorem ipsum dolor sit amet, dolor aliquid definiebas per ne, vix animal prompta indoctum te.
-            Agam noster sadipscing nec eu, at doming salutandi sit.
-          </p>
-        </div>
-        <div class='p-wrapper'>
-          <p>
-            Lorem ipsum dolor sit amet, dolor aliquid definiebas per ne, vix animal prompta indoctum te.
-            Agam noster sadipscing nec eu, at doming salutandi sit.
-          </p>
-        </div>
-        <div class='p-wrapper'>
-          <p>
-            Sit ei fugit fabellas repudiandae, ex sea elitr quodsi indoctum.
-            Laboramus aliquando at his, cu duo erat essent audiam. An vis facer corrumpit, usu ne quis idque.
-          </p>
-        </div>
-        <div class='p-wrapper'>
-          <p>
-            Sit ei fugit fabellas repudiandae, ex sea elitr quodsi indoctum.
-            Laboramus aliquando at his, cu duo erat essent audiam. An vis facer corrumpit, usu ne quis idque.
-            Lorem ipsum dolor sit amet, dolor aliquid definiebas per ne, vix animal prompta indoctum te.
-            Agam noster sadipscing nec eu, at doming salutandi sit.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet mattis lectus. Aliquam tempor ligula eget euismod viverra. Donec tempus libero congue nibh pharetra lobortis. Ut malesuada mauris nibh, et finibus nisl iaculis ac. Integer vulputate leo id est congue varius at vitae odio. Vivamus varius libero finibus enim varius varius. Morbi id nulla elementum, scelerisque libero non, dapibus lacus. Nam laoreet neque nec mi mattis tempor. Phasellus tempus tempor sem interdum facilisis. Maecenas auctor nulla ut sapien mollis, ac tempor velit vulputate. Nunc arcu nisl, accumsan eget erat eget, posuere congue augue. Maecenas consectetur pulvinar luctus. Ut sed orci turpis. Fusce maximus porttitor ante. Quisque vel placerat elit, sed efficitur sem. Curabitur venenatis tincidunt porttitor.
           </p>
         </div>
       </div>
     </div>
-  </div>
 
+    <!-- Configure heading two margin-bottom -->
+    <div class='spread'>
+      <div class='page'>
+        <div class='h2-wrapper'>
+          <h2>h2 margin-bottom</h2>
+        </div>
+        <div class='p-wrapper'>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet mattis lectus. Aliquam tempor ligula eget euismod viverra. Donec tempus libero congue nibh pharetra lobortis. Ut malesuada mauris nibh, et finibus nisl iaculis ac. Integer vulputate leo id est congue varius at vitae odio. Vivamus varius libero finibus enim varius varius. Morbi id nulla elementum, scelerisque libero non, dapibus lacus. Nam laoreet neque nec mi mattis tempor.
+          </p>
+        </div>
+      </div>
+      <div class='page' style='padding-top: 71px'>
+        <div class='p-wrapper'>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet mattis lectus. Aliquam tempor ligula eget euismod viverra. Donec tempus libero congue nibh pharetra lobortis. Ut malesuada mauris nibh, et finibus nisl iaculis ac. Integer vulputate leo id est congue varius at vitae odio. Vivamus varius libero finibus enim varius varius. Morbi id nulla elementum, scelerisque libero non, dapibus lacus. Nam laoreet neque nec mi mattis tempor. Phasellus tempus tempor sem interdum facilisis. Maecenas auctor nulla ut sapien mollis, ac tempor velit vulputate. Nunc arcu nisl, accumsan eget erat eget, posuere congue augue. Maecenas consectetur pulvinar luctus. Ut sed orci turpis. Fusce maximus porttitor ante. Quisque vel placerat elit, sed efficitur sem. Curabitur venenatis tincidunt porttitor.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Configure heading three margin-bottom -->
+    <div class='spread'>
+      <div class='page'>
+        <div class='h3-wrapper'>
+          <h3>h3 margin-bottom</h3>
+        </div>
+        <div class='p-wrapper'>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet mattis lectus. Aliquam tempor ligula eget euismod viverra. Donec tempus libero congue nibh pharetra lobortis. Ut malesuada mauris nibh, et finibus nisl iaculis ac. Integer vulputate leo id est congue varius at vitae odio. Vivamus varius libero finibus enim varius varius. Morbi id nulla elementum, scelerisque libero non, dapibus lacus. Nam laoreet neque nec mi mattis tempor.
+          </p>
+        </div>
+      </div>
+      <div class='page'>
+        <div class='p-wrapper'>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet mattis lectus. Aliquam tempor ligula eget euismod viverra. Donec tempus libero congue nibh pharetra lobortis. Ut malesuada mauris nibh, et finibus nisl iaculis ac. Integer vulputate leo id est congue varius at vitae odio. Vivamus varius libero finibus enim varius varius. Morbi id nulla elementum, scelerisque libero non, dapibus lacus. Nam laoreet neque nec mi mattis tempor. Phasellus tempus tempor sem interdum facilisis. Maecenas auctor nulla ut sapien mollis, ac tempor velit vulputate. Nunc arcu nisl, accumsan eget erat eget, posuere congue augue. Maecenas consectetur pulvinar luctus. Ut sed orci turpis. Fusce maximus porttitor ante. Quisque vel placerat elit, sed efficitur sem. Curabitur venenatis tincidunt porttitor.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </body>
 
 </html>

@@ -7,6 +7,9 @@
  */
 /* Document
    ========================================================================== */
+@import url("https://fonts.googleapis.com/css?family=PT+Serif");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans+Caption");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -420,32 +423,76 @@ html {
   box-sizing: inherit; }
 
 body {
-  font-size: 20px;
-  font-family: "PT Serif";
-  line-height: 1.5; }
+  font-size: 18px;
+  font-family: "PT Serif", serif;
+  line-height: 27px; }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: "PT Sans Caption", sans-serif; }
+
+h1 {
+  font-size: 54px;
+  line-height: 81px;
+  margin-top: -30px;
+  margin-bottom: -20px; }
+
+.h1-wrapper {
+  margin-bottom: 60px; }
+
+h2 {
+  font-size: 36px;
+  line-height: 54px;
+  margin-top: -20px;
+  margin-bottom: -13px; }
+
+.h2-wrapper {
+  margin-bottom: 33px; }
+
+h3 {
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: -11px;
+  margin-bottom: -6px; }
+
+.h3-wrapper {
+  margin-bottom: 11px; }
 
 p {
-  margin: 0;
-  text-indent: 20px; }
+  margin-top: -11px;
+  margin-bottom: -6px;
+  text-indent: 27px; }
+
+.p-wrapper {
+  margin-bottom: 11px; }
+
+.small-capitals {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 90%; }
+
+.no-indent {
+  text-indent: unset !important; }
 
 .spread {
   display: grid;
   grid-template-columns: [page-first] 1fr [page-last] 1fr;
-  grid-template-rows: 1fr;
-  border-bottom: 1px solid black; }
+  grid-template-rows: 1fr; }
 
 .page {
   grid-row: 1;
-  padding-top: 60px;
-  padding-bottom: 120px; }
+  padding-top: calc(100vh / 9);
+  padding-bottom: calc(100vh / 9 * 2); }
   .page:first-of-type {
     grid-column: page-first;
-    padding-left: 80px;
-    padding-right: 40px; }
+    padding-left: calc(100vw / 2 / 9 * 2);
+    padding-right: calc(100vw / 2 / 9); }
   .page:last-of-type {
     grid-column: page-last;
-    padding-left: 40px;
-    padding-right: 80px; }
+    padding-left: calc(100vw / 2 / 9);
+    padding-right: calc(100vw / 2 / 9 * 2); }

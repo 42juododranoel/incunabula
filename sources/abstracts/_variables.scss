@@ -1,4 +1,45 @@
-$font-size: 20px;
-$font-family: 'PT Serif';
+$font-family-sans: 'PT Sans', sans-serif;
+$font-family-serif: 'PT Serif', serif;
+$font-family-display: 'PT Sans Caption', sans-serif;
 
-$line-height: 1.5;
+$font-size: 18px;  // By hand
+$line-height: 27px;  // By hand
+
+$x-height: 9px;  // Calculated by hand based on font settings
+$interline: 11px;  // By making white lines equal
+$one-line: 33px;  // By measuring in Krita
+$two-lines: 60px;  // By measuring in Krita
+
+$p-font-size: $font-size;
+$p-line-height: $line-height;
+$p-margin-top: -11px;  // By measuring outer wrapper padding
+$p-margin-bottom: -6px;  // By measuring outer wrapper padding
+$p-wrapper-margin-bottom: $interline;
+$p-text-indent: $x-height * 3;
+
+$h1-font-size: 3 * $p-font-size;
+$h1-line-height: 81px;
+$h1-margin-top: -30px;  // By measuring outer wrapper padding
+$h1-margin-bottom: -20px;  // By measuring outer wrapper padding
+$h1-wrapper-margin-bottom: $two-lines;  // By aligning left and right lines
+
+$h2-font-size: 2 * $p-font-size;
+$h2-line-height: $h2-font-size + ($h2-font-size / 2);
+$h2-margin-top: -20px;  // By measuring outer wrapper padding
+$h2-margin-bottom: -13px;  // By measuring outer wrapper padding
+$h2-wrapper-margin-bottom: $one-line;  // By aligning left and right lines
+
+$h3-font-size: $p-font-size;
+$h3-line-height: $p-line-height;
+$h3-margin-top: $p-margin-top;
+$h3-margin-bottom: $p-margin-bottom;
+$h3-wrapper-margin-bottom: $p-wrapper-margin-bottom;
+
+// From Jan Tschichold's “The Form of the Book”
+$page-inner-padding: calc(100vw / 2 / 9);
+$page-top-padding: calc(100vh / 9);
+$page-outer-padding: calc(100vw / 2 / 9 * 2);
+$page-bottom-padding: calc(100vh / 9 * 2);
+
+$small-capitals-letter-spacing: 2px;
+$small-capitals-font-size: 90%;

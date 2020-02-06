@@ -14,8 +14,9 @@
 @import
   'base/base',
   'base/fonts',
-  'base/heading',
-  'base/paragraph',
+  'base/headings',
+  'base/paragraphs',
+  'base/capitals',
   'base/helpers';
 
 // 4. Layout-related sections
@@ -27,10 +28,3 @@
 // 5. Components
 @import
   'components/button';
-
-// 6. Page-specific styles
-// None
-
-// 7. Themes
-@import
-  'themes/default';
