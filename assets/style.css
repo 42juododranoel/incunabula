@@ -486,13 +486,13 @@ p {
 
 .page {
   grid-row: 1;
-  padding-top: calc(100vh / 9);
-  padding-bottom: calc(100vh / 9 * 2); }
+  padding-top: calc(100vh / 9 / 2 * 1.5);
+  padding-bottom: calc(100vh / 9 / 2 * 1.5 * 2); }
   .page:first-of-type {
     grid-column: page-first;
-    padding-left: calc(100vw / 2 / 9 * 2);
-    padding-right: calc(100vw / 2 / 9); }
+    padding-left: calc(100vw / 2 / 9 * 1.5);
+    padding-right: calc(100vw / 2 / 9 * 0.75); }
   .page:last-of-type {
     grid-column: page-last;
-    padding-left: calc(100vw / 2 / 9);
-    padding-right: calc(100vw / 2 / 9 * 2); }
+    padding-left: calc(100vw / 2 / 9 * 0.75);
+    padding-right: calc(100vw / 2 / 9 * 1.5); }

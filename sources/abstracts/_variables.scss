@@ -35,11 +35,19 @@ $h3-margin-top: $p-margin-top;
 $h3-margin-bottom: $p-margin-bottom;
 $h3-wrapper-margin-bottom: $p-wrapper-margin-bottom;
 
-// From Jan Tschichold's “The Form of the Book”
-$page-inner-padding: calc(100vw / 2 / 9);
-$page-top-padding: calc(100vh / 9);
-$page-outer-padding: calc(100vw / 2 / 9 * 2);
-$page-bottom-padding: calc(100vh / 9 * 2);
+// From Jan Tschichold's “The Form of the Book”,
+// adjusted to better fit on screen.
+//
+// Bureau uses:
+//   top — .0833333333rem,
+//   bottom — .1666666666rem,
+//   inner — 4.1666666667vw,
+//   outer — 8.3333333334vw.
+//
+$page-top-padding: calc(100vh / 9 / 2 * 1.5);
+$page-bottom-padding: calc(100vh / 9 / 2 * 1.5 * 2);
+$page-inner-padding: calc(100vw / 2 / 9 * 0.75);
+$page-outer-padding: calc(100vw / 2 / 9 * 1.5);
 
 $small-capitals-letter-spacing: 2px;
 $small-capitals-font-size: 90%;
