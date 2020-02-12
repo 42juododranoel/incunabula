@@ -1,5 +1,15 @@
-.spread {
-  display: grid;
-  grid-template-columns: [page-first] 1fr [page-last] 1fr;
-  grid-template-rows: 1fr;
+@include media-breakpoint-down($width-md - 1px) {
+  .spread {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+@include media-breakpoint-up($width-md) {
+  .spread {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
 }
