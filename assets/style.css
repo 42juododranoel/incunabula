@@ -470,11 +470,16 @@ p {
 
 .p-wrapper {
   margin-bottom: 11px; }
+  .p-wrapper.focused {
+    background-color: lightyellow; }
 
 .small-capitals {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 90%; }
+
+.focusable {
+  cursor: pointer; }
 
 .no-indent {
   text-indent: unset !important; }
@@ -520,3 +525,8 @@ p {
       grid-column: 2;
       padding-left: calc(100vw / 2 / 9 * 0.75);
       padding-right: calc(100vw / 2 / 9 * 1.5); } }
+
+.illustration {
+  position: relative; }
+  .illustration img {
+    position: absolute; }

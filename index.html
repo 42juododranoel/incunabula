@@ -222,7 +222,51 @@
       </div>
     </div>
 
+    <!-- Images example -->
+    <div class='spread'>
+      <div class='page'>
+        <div class='p-wrapper focusable focused'>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet mattis lectus. Aliquam tempor ligula eget euismod viverra. Donec tempus libero congue nibh pharetra lobortis. Ut malesuada mauris nibh, et finibus nisl iaculis ac. Integer vulputate leo id est congue varius at vitae odio. Vivamus varius libero finibus enim varius varius. Morbi id nulla elementum, scelerisque libero non, dapibus lacus. Nam laoreet neque nec mi mattis tempor.
+          </p>
+        </div>
+        <div class='p-wrapper focusable'>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet mattis lectus. Aliquam tempor ligula eget euismod viverra. Donec tempus libero congue nibh pharetra lobortis. Ut malesuada mauris nibh, et finibus nisl iaculis ac. Integer vulputate leo id est congue varius at vitae odio. Vivamus varius libero finibus enim varius varius. Morbi id nulla elementum, scelerisque libero non, dapibus lacus. Nam laoreet neque nec mi mattis tempor. Phasellus tempus tempor sem interdum facilisis. Maecenas auctor nulla ut sapien mollis, ac tempor velit vulputate. Nunc arcu nisl, accumsan eget erat eget, posuere congue augue. Maecenas consectetur pulvinar luctus. Ut sed orci turpis. Fusce maximus porttitor ante. Quisque vel placerat elit, sed efficitur sem. Curabitur venenatis tincidunt porttitor.
+          </p>
+        </div>
+        <div class='p-wrapper focusable'>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet mattis lectus. Aliquam tempor ligula eget euismod viverra. Donec tempus libero congue nibh pharetra lobortis. Ut malesuada mauris nibh, et finibus nisl iaculis ac. Integer vulputate leo id est congue varius at vitae odio. Vivamus varius libero finibus enim varius varius. Morbi id nulla elementum, scelerisque libero non, dapibus lacus. Nam laoreet neque nec mi mattis tempor.
+          </p>
+        </div>
+      </div>
+      <div class='page'>
+        <div class='illustration'>
+          <img src='assets/1.png' />
+          <img src='assets/2.png' />
+          <img src='assets/3.png' />
+        </div>
+      </div>
+    </div>
+
   </div>
+
+  <script>
+    function focus(event) {
+        var focusables = document.querySelectorAll('.focusable')
+        for (focusable of focusables) {
+            focusable.classList.remove('focused')
+        }
+        this.classList.add('focused')
+    }
+
+    var focusables = document.querySelectorAll('.focusable')
+    for (focusable of focusables) {
+        focusable.addEventListener('click', focus, false)
+    }
+  </script>
+
 </body>
 
 </html>

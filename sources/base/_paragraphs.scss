@@ -6,4 +6,8 @@ p {
 
 .p-wrapper {
   margin-bottom: $p-wrapper-margin-bottom;
+
+  &.focused {
+    background-color: lightyellow;
+  }
 }
