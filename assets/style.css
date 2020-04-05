@@ -481,6 +481,10 @@ p {
 .focusable {
   cursor: pointer; }
 
+img {
+  width: 100%;
+  height: auto; }
+
 .no-indent {
   text-indent: unset !important; }
 
@@ -529,4 +533,6 @@ p {
 .illustration {
   position: relative; }
   .illustration img {
-    position: absolute; }
+    position: absolute;
+    width: 100%;
+    height: auto; }
