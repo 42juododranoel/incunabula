@@ -478,7 +478,7 @@ p {
   letter-spacing: 2px;
   font-size: 90%; }
 
-.focusable {
+[data-focus] {
   cursor: pointer; }
 
 img {
