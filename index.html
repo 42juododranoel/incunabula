@@ -264,8 +264,17 @@
         unfocus_focusables()
         this.classList.add('focused')
 
+        // // Pure shit
         // var focused_elements = document.getElementsByClassName('focused')
-        // var spread = elements[0].parentElement.parentElement
+        // var spread = focused_elements[0].parentElement.parentElement
+        //
+        // var spread_illustrations = document.querySelectorAll('.illustration')
+        // var illustration = spread_illustrations[0]
+        //
+        // var id = this.getAttribute('data-focus')
+        // var attribute = '[data-focus-illustration="' + id + '"]'
+        // var focused = illustration.querySelector(attribute)
+        // focused.classList.add('this_one')
     }
 
     var focusables = document.querySelectorAll('[data-focus]')
